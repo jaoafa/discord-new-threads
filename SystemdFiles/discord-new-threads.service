@@ -1,0 +1,13 @@
+[Unit]
+Description=discord-new-threads
+After=network.target
+
+[Service]
+User=root
+Group=root
+WorkingDirectory=%WorkingDirectory%
+ExecStart=/usr/bin/yarn build
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
