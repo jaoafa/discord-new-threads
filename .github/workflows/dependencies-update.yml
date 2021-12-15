@@ -1,6 +1,12 @@
 name: Update dependencies packages
 
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+    inputs:
+      exec-from:
+        description: "The project/user to execute from"
+        required: false
+        default: None
 
 jobs:
   update:
@@ -67,6 +73,8 @@ jobs:
           hub add -A
           hub commit -m "chore: Update dependencies packages"
           hub push --set-upstream origin dependencies-update-${{ steps.date.outputs.date }}
-          hub pull-request -b master -m "Update dependencies packages"
+          echo -e "Update dependencies packages\n\n" > description.md
+          echo "Executed from ${{ github.event.inputs.exec-from }}" >> description.md
+          hub pull-request -b master -F description.md -r ${{ github.event.sender.login }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
