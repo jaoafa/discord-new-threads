@@ -24,7 +24,7 @@ jobs:
         run: hub checkout -b dependencies-update-${{ steps.date.outputs.date }}
 
       - name: Setup node env 🏗
-        uses: actions/setup-node@v2.5.0
+        uses: actions/setup-node@v2.5.1
         with:
           node-version: 16
 
