@@ -1,8 +1,8 @@
 import config from 'config'
-import { Client, Intents, TextChannel } from 'discord.js'
+import { Client, TextChannel } from 'discord.js'
 
 const client = new Client({
-  intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES],
+  intents: ['Guilds', 'GuildMessages'],
 })
 
 client.on('ready', async () => {
