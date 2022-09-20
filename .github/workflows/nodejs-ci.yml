@@ -1,4 +1,4 @@
-# Node.js v16 でビルド・テストを実行する
+# Node.js v14 と v16 でビルド・テストを実行する
 
 name: Node CI
 
@@ -91,6 +91,9 @@ jobs:
       - name: 🧪 Run tests
         if: steps.package-json.outputs.test == 'true'
         run: yarn test
+
+      - name: ☑️ Check Dependencies
+        run: npx depcheck
 
       - name: Check exists dist directory
         id: check-dist
