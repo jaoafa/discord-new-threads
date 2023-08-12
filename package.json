@@ -1,11 +1,11 @@
 {
-  "name": "discord-crosspost-auto-translate",
-  "version": "3.0.0",
-  "description": "Collect chats and store them in a database.",
+  "name": "discord-new-threads",
+  "version": "1.0.0",
+  "description": "Notifies the text channel when a new thread is created in Discord.",
   "main": "dist/main.js",
-  "repository": "git@github.com:jaoafa/jaotanChatLogger3.git",
+  "repository": "git@github.com:jaoafa/discord-new-threads.git",
   "author": "Tomachi",
-  "license": "jaoLicense",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "build": "ts-node ./src/main.ts",
