@@ -1,8 +1,8 @@
 import config from 'config'
-import { Client, TextChannel } from 'discord.js'
+import { Client, GatewayIntentBits, TextChannel } from 'discord.js'
 
 const client = new Client({
-  intents: ['Guilds', 'GuildMessages'],
+  intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages],
 })
 
 client.on('ready', async () => {
@@ -24,7 +24,7 @@ client.on('threadCreate', async (thread) => {
 
     channel
       .send(
-        `<#${channelId}> -> \`${threadName}\` (<#${threadId}>) が \`${threadOwner?.user?.tag}\` によって作成されました。`
+        `<#${channelId}> -> \`${threadName}\` (<#${threadId}>) が \`${threadOwner?.user?.tag}\` によって作成されました。`,
       )
       .then(() => {
         console.log('posted created thread message')
