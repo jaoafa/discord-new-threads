@@ -1,4 +1,5 @@
-webpack.config.js
 dist
+output
 node_modules
-gasScript.js
+data
+logs

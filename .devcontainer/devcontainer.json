@@ -1,0 +1,45 @@
+{
+  "customizations": {
+    "extensions": [
+      "esbenp.prettier-vscode"
+    ],
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "git.branchProtection": [
+          "main",
+          "master"
+        ],
+        "[typescript]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode",
+          "editor.codeActionsOnSave": {
+            "source.organizeImports": false
+          }
+        }
+      }
+    },
+    "settings": {
+      "editor.formatOnSave": true,
+      "git.branchProtection": [
+        "main",
+        "master"
+      ],
+      "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.codeActionsOnSave": {
+          "source.organizeImports": false
+        }
+      }
+    }
+  },
+  "name": "discord-new-threads",
+  "postCreateCommand": "pnpm install",
+  "otherPortAttributes": {
+    "onAutoForward": "silent"
+  },
+  "waitFor": "postCreateCommand",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:0-18"
+}
