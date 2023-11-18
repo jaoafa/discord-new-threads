@@ -1,35 +1,35 @@
-import config from 'config'
-import { Client, GatewayIntentBits, TextChannel } from 'discord.js'
+import { Logger } from '@book000/node-utils'
+import { Configuration } from './config'
+import { Discord } from './discord'
 
-const client = new Client({
-  intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages],
-})
-
-client.on('ready', async () => {
-  console.log(`ready: ${client.user?.tag}`)
-})
-
-client.on('threadCreate', async (thread) => {
-  if (thread.guildId !== '597378876556967936') {
+async function main() {
+  const logger = Logger.configure('main')
+  const config = new Configuration('data/config.json')
+  config.load()
+  if (!config.validate()) {
+    logger.error('❌ Configuration is invalid')
+    logger.error(
+      `💡 Missing check(s): ${config.getValidateFailures().join(', ')}`
+    )
     return
   }
-  thread.guild?.channels.fetch('903778475188576286').then(async (channel) => {
-    if (!(channel instanceof TextChannel)) {
-      return // テキストチャンネルのメッセージではない
-    }
-    const channelId = thread.parent?.id
-    const threadName = thread.name
-    const threadId = thread.id
-    const threadOwner = await thread.fetchOwner()
 
-    channel
-      .send(
-        `<#${channelId}> -> \`${threadName}\` (<#${threadId}>) が \`${threadOwner?.user?.tag}\` によって作成されました。`,
-      )
-      .then(() => {
-        console.log('posted created thread message')
-      })
+  logger.info('🤖 Starting discord-new-threads')
+  const discord = new Discord(config)
+  process.once('SIGINT', () => {
+    logger.info('👋 SIGINT signal received.')
+    discord.close()
+
+    process.exit(0)
   })
-})
+}
 
-client.login(config.get('discordToken'))
+;(async () => {
+  try {
+    await main()
+  } catch (error) {
+    Logger.configure('main').error('Error', error as Error)
+    // eslint-disable-next-line unicorn/no-process-exit
+    process.exit(1)
+  }
+})()

@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
-    "target": "esnext",
+    "target": "es2020",
+    "module": "commonjs",
     "moduleResolution": "Node",
-    "lib": ["ESNext", "ESNext.AsyncIterable", "DOM"],
+    "lib": ["ESNext", "esnext.AsyncIterable"],
     "outDir": "./dist",
     "removeComments": true,
     "esModuleInterop": true,
@@ -23,7 +24,7 @@
     "baseUrl": ".",
     "newLine": "LF",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["src/*"]
     }
   },
   "include": ["src/**/*"]
