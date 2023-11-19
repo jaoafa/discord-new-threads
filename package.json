@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "@book000/node-utils": "1.10.2",
-    "@types/node": "20.9.1",
+    "@types/node": "20.9.2",
     "@typescript-eslint/eslint-plugin": "6.11.0",
     "@typescript-eslint/parser": "6.11.0",
     "discord.js": "14.14.1",
