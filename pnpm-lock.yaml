@@ -6,8 +6,8 @@ settings:
 
 devDependencies:
   '@book000/node-utils':
-    specifier: 1.12.39
-    version: 1.12.39
+    specifier: 1.12.40
+    version: 1.12.40
   '@types/node':
     specifier: 20.11.7
     version: 20.11.7
@@ -83,10 +83,10 @@ packages:
       js-tokens: 4.0.0
     dev: true
 
-  /@book000/node-utils@1.12.39:
-    resolution: {integrity: sha512-9y9BEd74N4aymUpLebFPy1nsin/oAygpChKxo+BhkFeMxlSK7zoOe7u1Y/WbDM6X2yA7EJtg7RTthM3iKNKQ/w==}
+  /@book000/node-utils@1.12.40:
+    resolution: {integrity: sha512-vfogd6pVD+Ifdyqcw9DDtc/kqCHFMKB/IdXCmJ6JfNSSwrjAozVA2Bhv2BuZRVjHFKPmVE+DU5N7nRvyJ82M/w==}
     dependencies:
-      axios: 1.6.5
+      axios: 1.6.6
       cycle: 1.0.3
       form-data: 4.0.0
       jsonc-parser: 3.2.1
@@ -803,8 +803,8 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /axios@1.6.5:
-    resolution: {integrity: sha512-Ii012v05KEVuUoFWmMW/UQv9aRIc3ZwkWDcM+h5Il8izZCtRVpDUfwpoFf7eOtajT3QiGR4yDUx7lPqHJULgbg==}
+  /axios@1.6.6:
+    resolution: {integrity: sha512-XZLZDFfXKM9U/Y/B4nNynfCRUqNyVZ4sBC/n9GDRCkq9vd2mIvKjKKsbIh1WPmHmNbg6ND7cTBY3Y2+u1G3/2Q==}
     dependencies:
       follow-redirects: 1.15.5
       form-data: 4.0.0
