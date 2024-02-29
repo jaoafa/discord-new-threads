@@ -26,7 +26,7 @@
     "dev": "tsx watch ./src/main.ts"
   },
   "devDependencies": {
-    "@book000/node-utils": "1.12.75",
+    "@book000/node-utils": "1.12.76",
     "@types/node": "20.11.23",
     "@typescript-eslint/eslint-plugin": "7.1.0",
     "@typescript-eslint/parser": "7.1.0",
