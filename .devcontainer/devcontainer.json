@@ -41,5 +41,5 @@
     "onAutoForward": "silent"
   },
   "waitFor": "postCreateCommand",
-  "image": "mcr.microsoft.com/devcontainers/typescript-node:0-18"
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:1-18"
 }
