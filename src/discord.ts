@@ -13,9 +13,12 @@ export class Discord {
     this.client.on('ready', this.onReady.bind(this))
     this.client.on('threadCreate', this.onThreadCreate.bind(this))
 
-    this.client.login(config.get('discord').token)
-
     this.config = config
+
+    this.client.login(config.get('discord').token).catch((error: unknown) => {
+      const logger = Logger.configure('Discord.constructor')
+      logger.error('❌ Failed to login', error as Error)
+    })
   }
 
   public getClient() {
@@ -26,11 +29,11 @@ export class Discord {
     return this.config
   }
 
-  public close() {
-    this.client.destroy()
+  public async close() {
+    await this.client.destroy()
   }
 
-  async onReady() {
+  onReady() {
     const logger = Logger.configure('Discord.onReady')
     logger.info(`👌 ready: ${this.client.user?.tag}`)
   }

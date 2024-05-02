@@ -1,6 +1,10 @@
 {
   "ignores": [
     "@types/node",
-    "run-z"
+    "run-z",
+    "eslint-config-standard",
+    "eslint-plugin-import",
+    "eslint-plugin-n",
+    "eslint-plugin-promise"
   ]
 }
