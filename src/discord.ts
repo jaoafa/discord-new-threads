@@ -7,11 +7,16 @@ export class Discord {
   public readonly client: Client
 
   constructor(config: Configuration) {
+    const logger = Logger.configure('Discord.constructor')
     this.client = new Client({
       intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages],
     })
     this.client.on('ready', this.onReady.bind(this))
-    this.client.on('threadCreate', this.onThreadCreate.bind(this))
+    this.client.on('threadCreate', (thread) => {
+      this.onThreadCreate(thread).catch((error: unknown) => {
+        logger.error('❌ Failed to handle threadCreate event', error as Error)
+      })
+    })
 
     this.config = config
 
