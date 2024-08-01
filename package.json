@@ -37,7 +37,7 @@
     "eslint-plugin-promise": "7.0.0",
     "prettier": "3.3.3",
     "run-z": "2.0.0",
-    "tsx": "4.16.4",
+    "tsx": "4.16.5",
     "typescript": "5.4.5"
   },
   "packageManager": "pnpm@9.6.0"
