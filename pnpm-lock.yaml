@@ -12,8 +12,8 @@ importers:
         specifier: 1.7.36
         version: 1.7.36(eslint-config-standard@17.1.0(eslint-plugin-import@2.29.1(@typescript-eslint/parser@8.1.0(eslint@9.9.0)(typescript@5.4.5))(eslint@9.9.0))(eslint-plugin-n@17.10.2(eslint@9.9.0))(eslint-plugin-promise@7.1.0(eslint@9.9.0))(eslint@9.9.0))(eslint@9.9.0)(typescript@5.4.5)
       '@book000/node-utils':
-        specifier: 1.13.215
-        version: 1.13.215
+        specifier: 1.13.216
+        version: 1.13.216
       '@types/node':
         specifier: 20.14.15
         version: 20.14.15
@@ -68,8 +68,8 @@ packages:
       eslint: 9.9.0
       eslint-config-standard: 17.1.0
 
-  '@book000/node-utils@1.13.215':
-    resolution: {integrity: sha512-qEjq29aekyGSqk68A4JGOaFhgrPlz4/1jiXax43ZgRU5GxXju4L3NRqbH8ssF/XUziQvhsmBayA1/5uwKAb/UQ==}
+  '@book000/node-utils@1.13.216':
+    resolution: {integrity: sha512-jkJev4mZksfvhuUQuPJHWkPYkfFN3s6ESymHwX4TACwlLElJ7XeUuZzz/0FM5nCp5IrGI2I3ZVQwwzDHedhFNQ==}
 
   '@colors/colors@1.6.0':
     resolution: {integrity: sha512-Ir+AOibqzrIsL6ajt3Rz3LskB7OiMVHqltZmspbW/TJuTVuyOMirVqAkjfY6JISiLHgyNqicAC8AyHHGzNd/dA==}
@@ -462,8 +462,8 @@ packages:
     resolution: {integrity: sha512-wvUjBtSGN7+7SjNpq/9M2Tg350UZD3q62IFZLbRAR1bSMlCo1ZaeW+BJ+D090e4hIIZLBcTDWe4Mh4jvUDajzQ==}
     engines: {node: '>= 0.4'}
 
-  axios@1.7.3:
-    resolution: {integrity: sha512-Ar7ND9pU99eJ9GpoGQKhKf58GpUOgnzuaB7ueNQ5BMi0p+LZ5oaEnfF999fAArcTIBwXTCHAmGcHOZJaWPq9Nw==}
+  axios@1.7.4:
+    resolution: {integrity: sha512-DukmaFRnY6AzAALSH4J2M3k6PkaC+MfaAGdEERRWcC9q3/TWQwLpHR8ZRLKTdQ3aBDL64EdluRDjJqKw+BPZEw==}
 
   balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
@@ -1703,9 +1703,9 @@ snapshots:
       - supports-color
       - typescript
 
-  '@book000/node-utils@1.13.215':
+  '@book000/node-utils@1.13.216':
     dependencies:
-      axios: 1.7.3
+      axios: 1.7.4
       cycle: 1.0.3
       form-data: 4.0.0
       jsonc-parser: 3.3.1
@@ -2086,7 +2086,7 @@ snapshots:
     dependencies:
       possible-typed-array-names: 1.0.0
 
-  axios@1.7.3:
+  axios@1.7.4:
     dependencies:
       follow-redirects: 1.15.6
       form-data: 4.0.0
