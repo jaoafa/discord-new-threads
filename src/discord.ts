@@ -58,6 +58,10 @@ export class Discord {
       logger.error(`❌ Not found notify channel: ${notifyChannelId}`)
       return
     }
+    if (!notifyChannel.isSendable()) {
+      logger.error(`❌ Notify channel is not sendable: ${notifyChannelId}`)
+      return
+    }
     if (!notifyChannel.isTextBased()) {
       logger.error(`❌ Notify channel is not text channel: ${notifyChannelId}`)
       return
