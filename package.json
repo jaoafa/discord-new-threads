@@ -30,7 +30,7 @@
     "@book000/node-utils": "1.13.255",
     "@types/node": "22.5.5",
     "discord.js": "14.16.2",
-    "eslint": "9.10.0",
+    "eslint": "9.11.0",
     "eslint-config-standard": "17.1.0",
     "eslint-plugin-import": "2.30.0",
     "eslint-plugin-n": "17.10.3",
