@@ -3,7 +3,7 @@
     "target": "es2020",
     "module": "commonjs",
     "moduleResolution": "Node",
-    "lib": ["ESNext", "esnext.AsyncIterable"],
+    "lib": ["ESNext", "esnext.AsyncIterable", "ESNext.Disposable"],
     "outDir": "./dist",
     "removeComments": true,
     "esModuleInterop": true,
