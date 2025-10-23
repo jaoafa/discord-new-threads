@@ -26,7 +26,7 @@
     "dev": "tsx watch ./src/main.ts"
   },
   "devDependencies": {
-    "@book000/eslint-config": "1.11.7",
+    "@book000/eslint-config": "1.11.8",
     "@book000/node-utils": "1.18.136",
     "@types/node": "22.18.11",
     "discord.js": "14.23.2",
