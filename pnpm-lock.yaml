@@ -18,8 +18,8 @@ importers:
         specifier: 24.10.1
         version: 24.10.1
       discord.js:
-        specifier: 14.25.0
-        version: 14.25.0
+        specifier: 14.25.1
+        version: 14.25.1
       eslint:
         specifier: 9.39.1
         version: 9.39.1
@@ -652,8 +652,8 @@ packages:
   discord-api-types@0.38.33:
     resolution: {integrity: sha512-oau1V7OzrNX8yNi+DfQpoLZCNCv7cTFmvPKwHfMrA/tewsO6iQKrMTzA7pa3iBSj0fED6NlklJ/1B/cC1kI08Q==}
 
-  discord.js@14.25.0:
-    resolution: {integrity: sha512-9rnJWTAkfauKTieYJ3oI4oncrSzpbJPWN1/XU+2H6wsHQPtqbOrXvgM0nFhSVnIbTo7nfUF7fzcYRevvRGjpzA==}
+  discord.js@14.25.1:
+    resolution: {integrity: sha512-2l0gsPOLPs5t6GFZfQZKnL1OJNYFcuC/ETWsW4VtKVD/tg4ICa9x+jb9bkPffkMdRpRpuUaO/fKkHCBeiCKh8g==}
     engines: {node: '>=18'}
 
   doctrine@2.1.0:
@@ -2317,7 +2317,7 @@ snapshots:
 
   discord-api-types@0.38.33: {}
 
-  discord.js@14.25.0:
+  discord.js@14.25.1:
     dependencies:
       '@discordjs/builders': 1.13.0
       '@discordjs/collection': 1.5.3
