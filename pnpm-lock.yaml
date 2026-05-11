@@ -12,11 +12,11 @@ importers:
         specifier: 1.14.30
         version: 1.14.30(eslint@10.3.0)(typescript@5.9.3)
       '@book000/node-utils':
-        specifier: 1.24.167
-        version: 1.24.167
+        specifier: 1.24.169
+        version: 1.24.169
       '@types/node':
-        specifier: 24.12.2
-        version: 24.12.2
+        specifier: 24.12.3
+        version: 24.12.3
       discord.js:
         specifier: 14.26.4
         version: 14.26.4
@@ -59,8 +59,8 @@ packages:
     peerDependencies:
       eslint: 10.3.0
 
-  '@book000/node-utils@1.24.167':
-    resolution: {integrity: sha512-BfhMzREUOW06t4ecsf8Ux4juCzYge7efdMy76OddG81DKZWO0ZrVrS9NkxEzU2n2vugXzeCA7tJGIbty3DmWwA==}
+  '@book000/node-utils@1.24.169':
+    resolution: {integrity: sha512-IagpWrmmufkGDDK2qTfHmkoCMRK72M/biVehFRby7gTi/EdyMOEfCipFJv1gsHvAW2PJe+6tQ0h0xvS2Sby9NQ==}
 
   '@colors/colors@1.6.0':
     resolution: {integrity: sha512-Ir+AOibqzrIsL6ajt3Rz3LskB7OiMVHqltZmspbW/TJuTVuyOMirVqAkjfY6JISiLHgyNqicAC8AyHHGzNd/dA==}
@@ -346,8 +346,8 @@ packages:
   '@types/json5@0.0.29':
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
 
-  '@types/node@24.12.2':
-    resolution: {integrity: sha512-A1sre26ke7HDIuY/M23nd9gfB+nrmhtYyMINbjI1zHJxYteKR6qSMX56FsmjMcDb3SMcjJg5BiRRgOCC/yBD0g==}
+  '@types/node@24.12.3':
+    resolution: {integrity: sha512-8oljBDGun9cIsZRJR6fkihn0TSXJI0UDOOhncYaERq6M0JMDoPLxyscwruJcb4GKS6dvK/d8xebYBg27h/duaQ==}
 
   '@types/triple-beam@1.3.5':
     resolution: {integrity: sha512-6WaYesThRMCl19iryMYP7/x2OVgCtbIVflDGFpWnb9irXI3UjYE4AzmYuiUKY1AJstGijoY+MgUszMgRxIYTYw==}
@@ -1701,7 +1701,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@book000/node-utils@1.24.167':
+  '@book000/node-utils@1.24.169':
     dependencies:
       cycle: 1.0.3
       jsonc-parser: 3.3.1
@@ -1930,7 +1930,7 @@ snapshots:
 
   '@types/json5@0.0.29': {}
 
-  '@types/node@24.12.2':
+  '@types/node@24.12.3':
     dependencies:
       undici-types: 7.16.0
 
@@ -1938,7 +1938,7 @@ snapshots:
 
   '@types/ws@8.18.1':
     dependencies:
-      '@types/node': 24.12.2
+      '@types/node': 24.12.3
 
   '@typescript-eslint/eslint-plugin@8.59.2(@typescript-eslint/parser@8.59.2(eslint@10.3.0)(typescript@5.9.3))(eslint@10.3.0)(typescript@5.9.3)':
     dependencies:
