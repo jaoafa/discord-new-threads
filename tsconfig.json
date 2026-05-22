@@ -5,6 +5,7 @@
     "moduleResolution": "Node",
     "lib": ["ESNext", "esnext.AsyncIterable"],
     "outDir": "./dist",
+    "rootDir": "./src",
     "removeComments": true,
     "esModuleInterop": true,
     "allowJs": true,
@@ -21,6 +22,7 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "experimentalDecorators": true,
+    "ignoreDeprecations": "6.0",
     "baseUrl": ".",
     "newLine": "LF",
     "paths": {
