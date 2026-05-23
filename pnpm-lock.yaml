@@ -12,8 +12,8 @@ importers:
         specifier: 1.14.40
         version: 1.14.40(eslint@10.4.0)(typescript@5.9.3)
       '@book000/node-utils':
-        specifier: 1.24.170
-        version: 1.24.170
+        specifier: 1.24.193
+        version: 1.24.193
       '@types/node':
         specifier: 24.12.4
         version: 24.12.4
@@ -42,8 +42,8 @@ importers:
         specifier: 2.1.0
         version: 2.1.0
       tsx:
-        specifier: 4.22.2
-        version: 4.22.2
+        specifier: 4.22.3
+        version: 4.22.3
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -59,8 +59,8 @@ packages:
     peerDependencies:
       eslint: 10.4.0
 
-  '@book000/node-utils@1.24.170':
-    resolution: {integrity: sha512-qdr+FEirHkoEsCWHIO6XOwOryiE1p//FHIO4/BIBknF5u840SmRkMzY7BzQlhS9LdtPMmX0P8sWQu/nHm5wATg==}
+  '@book000/node-utils@1.24.193':
+    resolution: {integrity: sha512-2+NnVx4lzr6G8FLH20trPJM4HRChRIVz306RrKki8IQwHM0gcpDtWfMXRq5jKzxQAe8yfVwKuJhNPPUyrgOUgQ==}
 
   '@colors/colors@1.6.0':
     resolution: {integrity: sha512-Ir+AOibqzrIsL6ajt3Rz3LskB7OiMVHqltZmspbW/TJuTVuyOMirVqAkjfY6JISiLHgyNqicAC8AyHHGzNd/dA==}
@@ -1619,8 +1619,8 @@ packages:
   tslib@2.8.1:
     resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
 
-  tsx@4.22.2:
-    resolution: {integrity: sha512-6w9FwtT8WQqRAyTNR+Z+86kghRqpmOLjXUrBlBT6T+CQGDuIMm0VmAqaFUFBIeKDTGobE6/YSigZYLeomzBaRg==}
+  tsx@4.22.3:
+    resolution: {integrity: sha512-mdoNxBC/cSQObGGVQ5Bpn5i+yv7j68gk3Nfm3wFjcJg3Z0Mix9jzAFfP12prmm5eVGmDKtp0yyArrs0Q+8gZHg==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
@@ -1770,7 +1770,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@book000/node-utils@1.24.170':
+  '@book000/node-utils@1.24.193':
     dependencies:
       cycle: 1.0.3
       jsonc-parser: 3.3.1
@@ -3580,7 +3580,7 @@ snapshots:
 
   tslib@2.8.1: {}
 
-  tsx@4.22.2:
+  tsx@4.22.3:
     dependencies:
       esbuild: 0.28.0
     optionalDependencies:
