@@ -12,4 +12,4 @@ on:
 jobs:
   add-reviewer:
     name: Add reviewer
-    uses: book000/templates/.github/workflows/reusable-add-reviewer.yml@76e83535fd3f9ddc99c9333efb8a4f7dd886edd1 # master
+    uses: book000/templates/.github/workflows/reusable-add-reviewer.yml@249109e57d1bc836c5a4e1bbf4e446ad2c286deb # master
