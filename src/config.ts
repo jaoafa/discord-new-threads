@@ -8,7 +8,7 @@ export interface ConfigInterface {
   }
 }
 
-export class Configuration extends ConfigFramework<ConfigInterface> {
+export class Config extends ConfigFramework<ConfigInterface> {
   protected validates(): Record<string, (config: ConfigInterface) => boolean> {
     return {
       'discord is required': (config) => !!config.discord,

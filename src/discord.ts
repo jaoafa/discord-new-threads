@@ -1,29 +1,37 @@
 import { Client, GatewayIntentBits, ThreadChannel } from 'discord.js'
 import { Logger } from '@book000/node-utils'
-import { Configuration } from './config'
+import { Config } from './config'
 
 export class Discord {
-  private config: Configuration
+  private config: Config
   public readonly client: Client
 
-  constructor(config: Configuration) {
+  constructor(config: Config) {
     const logger = Logger.configure('Discord.constructor')
     this.client = new Client({
       intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages],
     })
     this.client.on('ready', this.onReady.bind(this))
     this.client.on('threadCreate', (thread) => {
-      this.onThreadCreate(thread).catch((error: unknown) => {
-        logger.error('❌ Failed to handle threadCreate event', error as Error)
-      })
+      ;(async () => {
+        try {
+          await this.onThreadCreate(thread)
+        } catch (error: unknown) {
+          logger.error('❌ Failed to handle threadCreate event', error as Error)
+        }
+      })()
     })
 
     this.config = config
 
-    this.client.login(config.get('discord').token).catch((error: unknown) => {
-      const logger = Logger.configure('Discord.constructor')
-      logger.error('❌ Failed to login', error as Error)
-    })
+    const client = this.client
+    ;(async () => {
+      try {
+        await client.login(config.get('discord').token)
+      } catch (error: unknown) {
+        logger.error('❌ Failed to login', error as Error)
+      }
+    })()
   }
 
   public getClient() {
