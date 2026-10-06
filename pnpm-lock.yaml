@@ -167,8 +167,8 @@ importers:
   .:
     devDependencies:
       '@book000/eslint-config':
-        specifier: 1.16.82
-        version: 1.16.82(eslint@10.11.0(supports-color@8.1.1))(supports-color@8.1.1)(typescript@6.0.3)
+        specifier: 1.16.83
+        version: 1.16.83(eslint@10.11.0(supports-color@8.1.1))(supports-color@8.1.1)(typescript@6.0.3)
       '@book000/node-utils':
         specifier: 1.25.141
         version: 1.25.141(@babel/core@7.29.7(supports-color@8.1.1))
@@ -275,8 +275,8 @@ packages:
     resolution: {integrity: sha512-Vj1jF3cPfxg7OAfoI7QnVKLoILlm2JF9pnVHrX8qx7AHMiYWT+NDAA7jChlNgRS4WTLc/fD1lXLmPixluj+3Gg==}
     engines: {node: '>=6.9.0'}
 
-  '@book000/eslint-config@1.16.82':
-    resolution: {integrity: sha512-ZhXdnysP/LCeDvJhYRMWoEjz4INrGRlIOCdT1RqbC/8Z5B5BT2Rq1Eo2M9NHf5XZBcuZq9Q/ivjkxh2JMJO3ZA==}
+  '@book000/eslint-config@1.16.83':
+    resolution: {integrity: sha512-+CogOizAkAMbkq3ORQmFEQZ+f5sCsrKJDBaGwZH9Lm3OXeYWus7Sfg+TaDHU0i7lSPM+eorYVNJ1LBcKqiXIuA==}
     peerDependencies:
       eslint: 10.12.0
 
@@ -2341,7 +2341,7 @@ snapshots:
       '@babel/helper-validator-identifier': 7.29.7
     optional: true
 
-  '@book000/eslint-config@1.16.82(eslint@10.11.0(supports-color@8.1.1))(supports-color@8.1.1)(typescript@6.0.3)':
+  '@book000/eslint-config@1.16.83(eslint@10.11.0(supports-color@8.1.1))(supports-color@8.1.1)(typescript@6.0.3)':
     dependencies:
       '@typescript-eslint/parser': 8.71.0(eslint@10.11.0(supports-color@8.1.1))(supports-color@8.1.1)(typescript@6.0.3)
       eslint: 10.11.0(supports-color@8.1.1)
