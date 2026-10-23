@@ -1,6 +1,7 @@
 import { Client, GatewayIntentBits, ThreadChannel } from 'discord.js'
 import { Logger } from '@book000/node-utils'
 import { Configuration } from './config'
+import { buildThreadNotification } from './format'
 
 export class Discord {
   private config: Configuration
@@ -73,8 +74,13 @@ export class Discord {
     const threadOwner = await thread.fetchOwner()
     const threadOwnerName = threadOwner?.user?.username
 
-    const content = `<#${channelId}> -> \`${threadName}\` (<#${threadId}>) が \`${threadOwnerName}\` によって作成されました。`
-    await notifyChannel.send(content)
+    const content = buildThreadNotification({
+      channelId,
+      threadId,
+      threadName,
+      ownerName: threadOwnerName,
+    })
+    await notifyChannel.send({ content, allowedMentions: { parse: [] } })
   }
 
   waitReady() {
