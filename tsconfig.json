@@ -8,6 +8,7 @@
     "rootDir": "./src",
     "removeComments": true,
     "esModuleInterop": true,
+    "skipLibCheck": true,
     "allowJs": true,
     "checkJs": true,
     "incremental": true,
