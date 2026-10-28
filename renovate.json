@@ -1,12 +1,5 @@
 {
   "extends": [
     "github>book000/templates//renovate/base"
-  ],
-  "packageRules": [
-    {
-      "description": "Keep @types/node aligned with the Node 24 runtime (node:24-alpine in Dockerfile, .node-version). @types/node 26 removes util.InspectOptionsStylized, which the @sapphire/shapeshift@4 d.cts imports, breaking tsc. Lift this rule when the runtime moves to Node 26.",
-      "matchPackageNames": ["@types/node"],
-      "allowedVersions": "<25"
-    }
   ]
 }
